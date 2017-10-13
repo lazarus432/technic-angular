@@ -4,6 +4,8 @@ import { headerComponent } from './header/app.headerComponent';
 import { navComponent } from './nav/app.navComponent';
 import { mainContentComponent } from './mainContent/app.mainContentComponent';
 import { footerComponent } from './footer/app.footerComponent';
+import { aboutComponent } from './about/app.aboutComponent';
+import { contactComponent } from './contact/app.contactComponent';
 
 @Component({
   selector: 'my-app',

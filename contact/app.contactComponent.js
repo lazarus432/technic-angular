@@ -6,16 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var mainContentComponent = (function () {
-    function mainContentComponent() {
+var contactComponent = (function () {
+    function contactComponent() {
     }
-    return mainContentComponent;
+    return contactComponent;
 }());
-mainContentComponent = __decorate([
+contactComponent = __decorate([
     core_1.Component({
-        //selector: 'mainContent',
-        templateUrl: './mainContent.html',
+        //selector: '',
+        templateUrl: './contact.html',
     })
-], mainContentComponent);
-exports.mainContentComponent = mainContentComponent;
-//# sourceMappingURL=app.mainContentComponent.js.map
+], contactComponent);
+exports.contactComponent = contactComponent;
+//# sourceMappingURL=app.contactComponent.js.map
