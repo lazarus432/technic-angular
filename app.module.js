@@ -16,6 +16,7 @@ var app_mainContentComponent_1 = require("./mainContent/app.mainContentComponent
 var app_footerComponent_1 = require("./footer/app.footerComponent");
 var app_aboutComponent_1 = require("./about/app.aboutComponent");
 var app_contactComponent_1 = require("./contact/app.contactComponent");
+var app_serviceComponent_1 = require("./services/app.serviceComponent");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -35,6 +36,10 @@ AppModule = __decorate([
                     component: app_contactComponent_1.contactComponent
                 },
                 {
+                    path: 'services',
+                    component: app_serviceComponent_1.serviceComponent
+                },
+                {
                     path: '',
                     component: app_mainContentComponent_1.mainContentComponent
                 }
@@ -46,7 +51,8 @@ AppModule = __decorate([
             app_mainContentComponent_1.mainContentComponent,
             app_footerComponent_1.footerComponent,
             app_aboutComponent_1.aboutComponent,
-            app_contactComponent_1.contactComponent
+            app_contactComponent_1.contactComponent,
+            app_serviceComponent_1.serviceComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })
