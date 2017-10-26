@@ -14,7 +14,7 @@ var headerComponent = (function () {
 headerComponent = __decorate([
     core_1.Component({
         selector: 'header',
-        templateUrl: './header.html',
+        templateUrl: './header.html'
     })
 ], headerComponent);
 exports.headerComponent = headerComponent;
