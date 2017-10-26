@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from '../contact.model';
+import { Contact } from '../models/contact.model';
 
 @Component({
   //selector: 'contact-form',
