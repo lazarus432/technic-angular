@@ -11,11 +11,11 @@ var ServicesService = (function () {
     }
     ServicesService.prototype.getServices = function () {
         return [
-            { "id": 1, "name": "Email Tutorials", "price": "$40.00 per hour" },
-            { "id": 2, "name": "Smart Phone Tutorials", "price": "$40.00 per hour" },
+            { "id": 1, "name": "Email Tutorials", "price": "$40.00" },
+            { "id": 2, "name": "Smart Phone Tutorials", "price": "$40.00" },
             { "id": 3, "name": "Printer/Fax Setup", "price": "$20.00" },
             { "id": 4, "name": "Data Transfer", "price": "$30.00" },
-            { "id": 5, "name": "Virus Removal", "price": "$40.00 per hour" }
+            { "id": 5, "name": "Virus Removal", "price": "$40.00" }
         ];
     };
     return ServicesService;

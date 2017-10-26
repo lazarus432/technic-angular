@@ -1,8 +1,16 @@
 <section class="main">
-  <h1 style="text-align:center; padding: 10px;">Services</h1>
+  <div class="heading-main">Services</div>
+  <hr/>
   <div class="content">
-    <ul *ngFor="let service of services">
-      <li>{{service.name}}-----{{service.price}}</li>
-    </ul>
+    <table>
+      <tr>
+        <th style="text-align:center">Name</th>
+        <th style="text-align:center">Price</th>
+      </tr>
+      <tr *ngFor="let service of services">
+        <th>{{service.name}}</th>
+        <th style="text-align:center">{{service.price}}</th>
+      </tr>
+     </table>
   </div>
 </section>
