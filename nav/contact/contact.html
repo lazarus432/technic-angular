@@ -1,0 +1,21 @@
+<section class="main">
+	<h1 style="text-align:center; padding:10px;">Contact</h1>
+  <h3>Add Contact</h3>
+  <form (submit)="addContact()">
+    <input type="text" [(ngModel)]="first" name="first" />
+  </form>
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Department</th>
+      <th>Email Address</th>
+    </tr>
+    <tr *ngFor="let contact of contacts">
+      <td>{{contact.first}}</td>
+      <td>{{contact.last}}</td>
+      <td>{{contact.department}}</td>
+      <td>{{contact.email}}</td>
+    </tr>
+  </table>
+</section>
