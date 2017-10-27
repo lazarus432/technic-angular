@@ -12,11 +12,11 @@ var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var app_headerComponent_1 = require("./header/app.headerComponent");
 var app_navComponent_1 = require("./nav/app.navComponent");
-var app_mainContentComponent_1 = require("./mainContent/app.mainContentComponent");
+var app_homeComponent_1 = require("./nav/home/app.homeComponent");
 var app_footerComponent_1 = require("./footer/app.footerComponent");
-var app_aboutComponent_1 = require("./about/app.aboutComponent");
-var app_contactComponent_1 = require("./contact/app.contactComponent");
-var app_serviceComponent_1 = require("./services/app.serviceComponent");
+var app_aboutComponent_1 = require("./nav/about/app.aboutComponent");
+var app_contactComponent_1 = require("./nav/contact/app.contactComponent");
+var app_serviceComponent_1 = require("./nav/services/app.serviceComponent");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -41,14 +41,14 @@ AppModule = __decorate([
                 },
                 {
                     path: '',
-                    component: app_mainContentComponent_1.mainContentComponent
+                    component: app_homeComponent_1.homeComponent
                 }
             ])
         ],
         declarations: [app_component_1.AppComponent,
             app_headerComponent_1.headerComponent,
             app_navComponent_1.navComponent,
-            app_mainContentComponent_1.mainContentComponent,
+            app_homeComponent_1.homeComponent,
             app_footerComponent_1.footerComponent,
             app_aboutComponent_1.aboutComponent,
             app_contactComponent_1.contactComponent,

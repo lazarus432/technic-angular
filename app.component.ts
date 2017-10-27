@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { ServicesService } from './services/services.service';
+import { ServicesService } from './nav/services/services.service';
 
 import { headerComponent } from './header/app.headerComponent';
 import { navComponent } from './nav/app.navComponent';
-import { mainContentComponent } from './mainContent/app.mainContentComponent';
+import { homeComponent } from './nav/home/app.homeComponent';
 import { footerComponent } from './footer/app.footerComponent';
-import { aboutComponent } from './about/app.aboutComponent';
-import { contactComponent } from './contact/app.contactComponent';
-import { serviceComponent } from './services/app.serviceComponent';
+import { aboutComponent } from './nav/about/app.aboutComponent';
+import { contactComponent } from './nav/contact/app.contactComponent';
+import { serviceComponent } from './nav/services/app.serviceComponent';
 
 @Component({
   selector: 'my-app',

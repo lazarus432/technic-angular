@@ -6,7 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var services_service_1 = require("./services/services.service");
+var services_service_1 = require("./nav/services/services.service");
 var AppComponent = (function () {
     function AppComponent() {
     }

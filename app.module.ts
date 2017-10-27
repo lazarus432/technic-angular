@@ -7,11 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent }  from './app.component';
 import { headerComponent } from './header/app.headerComponent';
 import { navComponent } from './nav/app.navComponent';
-import { mainContentComponent } from './mainContent/app.mainContentComponent';
+import { homeComponent } from './nav/home/app.homeComponent';
 import { footerComponent } from './footer/app.footerComponent';
-import { aboutComponent } from './about/app.aboutComponent';
-import { contactComponent } from './contact/app.contactComponent';
-import { serviceComponent } from './services/app.serviceComponent';
+import { aboutComponent } from './nav/about/app.aboutComponent';
+import { contactComponent } from './nav/contact/app.contactComponent';
+import { serviceComponent } from './nav/services/app.serviceComponent';
 
 @NgModule({
   imports: [ BrowserModule,
@@ -31,14 +31,14 @@ import { serviceComponent } from './services/app.serviceComponent';
             },
   					{
   						path: '',
-  						component: mainContentComponent
+  						component: homeComponent
   					}
   					])
   				],
   declarations: [ AppComponent, 
   				  headerComponent, 
   				  navComponent, 
-  				  mainContentComponent, 
+  				  homeComponent, 
   				  footerComponent,
   				  aboutComponent,
             contactComponent,
