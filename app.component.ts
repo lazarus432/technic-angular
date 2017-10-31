@@ -8,6 +8,7 @@ import { footerComponent } from './footer/app.footerComponent';
 import { aboutComponent } from './nav/about/app.aboutComponent';
 import { contactComponent } from './nav/contact/app.contactComponent';
 import { serviceComponent } from './nav/services/app.serviceComponent';
+import { socialComponent } from './social/app.socialComponent';
 
 @Component({
   selector: 'my-app',

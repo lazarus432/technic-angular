@@ -8,6 +8,7 @@ import { AppComponent }  from './app.component';
 import { headerComponent } from './header/app.headerComponent';
 import { navComponent } from './nav/app.navComponent';
 import { homeComponent } from './nav/home/app.homeComponent';
+import { socialComponent } from './social/app.socialComponent';
 import { footerComponent } from './footer/app.footerComponent';
 import { aboutComponent } from './nav/about/app.aboutComponent';
 import { contactComponent } from './nav/contact/app.contactComponent';
@@ -38,7 +39,8 @@ import { serviceComponent } from './nav/services/app.serviceComponent';
   declarations: [ AppComponent, 
   				  headerComponent, 
   				  navComponent, 
-  				  homeComponent, 
+            homeComponent,
+            socialComponent,
   				  footerComponent,
   				  aboutComponent,
             contactComponent,

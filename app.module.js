@@ -13,6 +13,7 @@ var app_component_1 = require("./app.component");
 var app_headerComponent_1 = require("./header/app.headerComponent");
 var app_navComponent_1 = require("./nav/app.navComponent");
 var app_homeComponent_1 = require("./nav/home/app.homeComponent");
+var app_socialComponent_1 = require("./social/app.socialComponent");
 var app_footerComponent_1 = require("./footer/app.footerComponent");
 var app_aboutComponent_1 = require("./nav/about/app.aboutComponent");
 var app_contactComponent_1 = require("./nav/contact/app.contactComponent");
@@ -49,6 +50,7 @@ AppModule = __decorate([
             app_headerComponent_1.headerComponent,
             app_navComponent_1.navComponent,
             app_homeComponent_1.homeComponent,
+            app_socialComponent_1.socialComponent,
             app_footerComponent_1.footerComponent,
             app_aboutComponent_1.aboutComponent,
             app_contactComponent_1.contactComponent,
