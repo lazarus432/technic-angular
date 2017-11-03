@@ -18,6 +18,9 @@ var app_footerComponent_1 = require("./footer/app.footerComponent");
 var app_aboutComponent_1 = require("./nav/about/app.aboutComponent");
 var app_contactComponent_1 = require("./nav/contact/app.contactComponent");
 var app_serviceComponent_1 = require("./nav/services/app.serviceComponent");
+var app_catalogComponent_1 = require("./projects/app.catalogComponent");
+var app_attractionsComponent_1 = require("./projects/app.attractionsComponent");
+var app_linuxComponent_1 = require("./projects/app.linuxComponent");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -30,7 +33,21 @@ AppModule = __decorate([
             router_1.RouterModule.forRoot([
                 {
                     path: 'about',
-                    component: app_aboutComponent_1.aboutComponent
+                    component: app_aboutComponent_1.aboutComponent,
+                    children: [
+                        {
+                            path: 'about/catalog',
+                            component: app_catalogComponent_1.catalogComponent
+                        },
+                        {
+                            path: 'about/attractions',
+                            component: app_attractionsComponent_1.attractionsComponent
+                        },
+                        {
+                            path: 'about/linux',
+                            component: app_linuxComponent_1.linuxComponent
+                        }
+                    ]
                 },
                 {
                     path: 'contact',
@@ -54,7 +71,10 @@ AppModule = __decorate([
             app_footerComponent_1.footerComponent,
             app_aboutComponent_1.aboutComponent,
             app_contactComponent_1.contactComponent,
-            app_serviceComponent_1.serviceComponent
+            app_serviceComponent_1.serviceComponent,
+            app_catalogComponent_1.catalogComponent,
+            app_linuxComponent_1.linuxComponent,
+            app_attractionsComponent_1.attractionsComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

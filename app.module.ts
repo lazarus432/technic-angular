@@ -13,14 +13,31 @@ import { footerComponent } from './footer/app.footerComponent';
 import { aboutComponent } from './nav/about/app.aboutComponent';
 import { contactComponent } from './nav/contact/app.contactComponent';
 import { serviceComponent } from './nav/services/app.serviceComponent';
+import { catalogComponent } from './projects/app.catalogComponent';
+import { attractionsComponent } from './projects/app.attractionsComponent';
+import { linuxComponent } from './projects/app.linuxComponent';
 
 @NgModule({
   imports: [ BrowserModule,
-             FormsModule,
-  				   RouterModule.forRoot([
+    FormsModule,
+    RouterModule.forRoot([
   					{
   						path: 'about',
-  						component: aboutComponent
+              component: aboutComponent,
+              children: [
+                {
+                  path: 'about/catalog',
+                  component: catalogComponent
+                },
+                {
+                  path: 'about/attractions',
+                  component: attractionsComponent
+                },
+                {
+                  path: 'about/linux',
+                  component: linuxComponent
+                }
+                  ]
   					},
   					{
   						path: 'contact',
@@ -33,7 +50,7 @@ import { serviceComponent } from './nav/services/app.serviceComponent';
   					{
   						path: '',
   						component: homeComponent
-  					}
+            }
   					])
   				],
   declarations: [ AppComponent, 
@@ -44,7 +61,10 @@ import { serviceComponent } from './nav/services/app.serviceComponent';
   				  footerComponent,
   				  aboutComponent,
             contactComponent,
-            serviceComponent
+            serviceComponent,
+            catalogComponent,
+            linuxComponent,
+            attractionsComponent
   				],
   bootstrap: [ AppComponent ]
 })
