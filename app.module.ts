@@ -16,6 +16,7 @@ import { serviceComponent } from './nav/services/app.serviceComponent';
 import { catalogComponent } from './projects/app.catalogComponent';
 import { attractionsComponent } from './projects/app.attractionsComponent';
 import { linuxComponent } from './projects/app.linuxComponent';
+import { analysisComponent } from './projects/app.analysisComponent';
 
 @NgModule({
   imports: [ BrowserModule,
@@ -32,6 +33,10 @@ import { linuxComponent } from './projects/app.linuxComponent';
                 {
                   path: 'about/attractions',
                   component: attractionsComponent
+                },
+                {
+                  path: 'about/log-analysis',
+                  component: analysisComponent
                 },
                 {
                   path: 'about/linux',
@@ -64,7 +69,8 @@ import { linuxComponent } from './projects/app.linuxComponent';
             serviceComponent,
             catalogComponent,
             linuxComponent,
-            attractionsComponent
+            attractionsComponent,
+            analysisComponent
   				],
   bootstrap: [ AppComponent ]
 })

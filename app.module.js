@@ -21,6 +21,7 @@ var app_serviceComponent_1 = require("./nav/services/app.serviceComponent");
 var app_catalogComponent_1 = require("./projects/app.catalogComponent");
 var app_attractionsComponent_1 = require("./projects/app.attractionsComponent");
 var app_linuxComponent_1 = require("./projects/app.linuxComponent");
+var app_analysisComponent_1 = require("./projects/app.analysisComponent");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -42,6 +43,10 @@ AppModule = __decorate([
                         {
                             path: 'about/attractions',
                             component: app_attractionsComponent_1.attractionsComponent
+                        },
+                        {
+                            path: 'about/log-analysis',
+                            component: app_analysisComponent_1.analysisComponent
                         },
                         {
                             path: 'about/linux',
@@ -74,7 +79,8 @@ AppModule = __decorate([
             app_serviceComponent_1.serviceComponent,
             app_catalogComponent_1.catalogComponent,
             app_linuxComponent_1.linuxComponent,
-            app_attractionsComponent_1.attractionsComponent
+            app_attractionsComponent_1.attractionsComponent,
+            app_analysisComponent_1.analysisComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })
